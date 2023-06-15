@@ -12,7 +12,7 @@ const Login: React.FC = () => {
       }}>
       <Icon />
       
-      <LoginForm headerText="Create Account" paragraphText = "If you already have an account, " linkPath = "/"/>
+      <LoginForm headerText="Create Account" paragraphText = "If you already have an account, " linkPath = "/login" linkText='Sign In'/>
 
     </div>
   );

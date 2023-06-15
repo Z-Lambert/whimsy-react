@@ -5,7 +5,8 @@ import { Link } from 'react-router-dom';
 interface TextInfo {
     headerText: string;
     paragraphText: string;
-    linkPath: string
+    linkPath: string;
+    linkText: string;
 }
 
 const LoginForm = (props: TextInfo) => {
@@ -58,7 +59,7 @@ const LoginForm = (props: TextInfo) => {
         </>
       )}
       <p className={styles.signupText}>If you don't have an account, <Link to={props.linkPath} relative="path">
-      Sign Up
+      {props.linkText}
     </Link></p>
     </div>
   );
