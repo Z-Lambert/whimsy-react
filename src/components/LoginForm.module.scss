@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
+
+
+.header {
+    font-family: 'Poppins', sans-serif;
+    font-size: calc(15px + 0.390625vw);
+    width: 55%;
+    text-align: left;
+}
+
+.loginForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  flex-direction: column;
+  
+}
+
+.input {
+  width: 55%; // Stretch across the screen
+  height: 3em;
+  z-index: 2;
+  padding: 10px;
+  margin: 10px 0;
+  border: 2px solid black;
+  background: transparent;
+  color: black;
+    box-sizing: border-box;
+    font-size: calc(10px + 0.390625vw);
+font-family: 'Poppins', sans-serif;
+}
+
+.nextButton,
+.loginButton {
+    font-family: 'Poppins', sans-serif;
+    height: 3em;
+    font-size: calc(10px + 0.390625vw);
+  width: 55%; // Stretch across the screen
+  box-sizing: border-box;
+  padding: 10px;
+  z-index: 2;
+  margin: 10px 0;
+  border: 2px solid black;
+  background: black;
+  color: white;
+  cursor: pointer;
+}
+
+.editButton {
+    font-family: 'Poppins', sans-serif;
+  margin-left: 10px;
+  padding: 5px 10px;
+  border: 1px solid black;
+  background: white;
+  cursor: pointer;
+}
+
+.signupText {
+    font-size: calc(10px + 0.390625vw);
+    font-family: 'Poppins', sans-serif;
+    width: 55%;
+    text-align: left;
+}

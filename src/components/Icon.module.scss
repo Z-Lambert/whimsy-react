@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+
+
+img {
+  // put the logo in the center top
+position: absolute;
+z-index: 1;
+  left: 50%;
+  top: 10%;
+  transform: translate(-50%, 0); // Shift the logo back to the left by half it
+      width: 300px;
+    height: 300px;
+    object-fit: scale-down;
+}
+
+
+
+
+

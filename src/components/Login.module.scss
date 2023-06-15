@@ -1,0 +1,25 @@
+.logo {
+  // put the logo in the top left corner
+position: absolute;
+  left: 50%;
+  top: 10%;
+  transform: translate(-50%, 0); // Shift the logo back to the left by half it
+      width: 300px;
+    height: 300px;
+    object-fit: scale-down;
+}
+
+.body { // Or another selector that refers to your entire page
+  height: 100vh; // or any specific height based on your requirement
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 100% auto;
+  overflow: hidden;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
+}
