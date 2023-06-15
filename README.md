@@ -1,2 +1,3 @@
-# fanfiction-review-frontend
-React frontend for my fanfiction review website
+# whimsy react project
+React frontend for the whimsy site
+
