@@ -14,7 +14,7 @@ const Login: React.FC = () => {
         <Icon white={false}/>
       </div>
       <div className={styles.form}>
-        <SignupForm headerText="Create Account" paragraphText = "If you already have an account, " linkPath = "/login" linkText='Sign In'/>
+        <SignupForm headerText="Create Account" paragraphText = "If you already have an account, " linkPath = "/login" linkText='Log In'/>
       </div>
     </div>
   );
