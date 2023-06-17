@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
+
+
+.fanficCard {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 10px;
+  overflow: hidden;
+}
+
+.fanficCard:hover {
+  border: 2px solid #ccc;
+
+}
+
+.fanficHeader {
+  background-color: #ffffff;
+  padding: 10px;
+}
+
+.fanficBody {
+  padding: 10px;
+  background-color: #f0f0f0ad;
+}
+
+.fanficFooter {
+  background-color: #f0f0f0ad;
+  padding: 10px;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+  max-height: 5000px; /* Set to a value larger than what the div could ever expand to */
+} 
+
+.fanficFooterHidden {
+    background-color: #f0f0f0ad;
+  padding: 10px;
+  max-height: 0;
+  transition: max-height 0.5s ease;
+}

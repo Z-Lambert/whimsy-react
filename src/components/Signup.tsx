@@ -1,19 +1,21 @@
 import React from 'react';
 import Icon from './Icon';
-import LoginForm from './LoginForm';
-import styles from './Login.module.scss';
+import styles from './Signup.module.scss';
 import background from '../assets/images/background.png'
+import SignupForm from './SignupForm';
 
 const Login: React.FC = () => {
 
   return (
-    <div className={styles.body} style={{ 
+    <div className={styles.container} style={{ 
         backgroundImage: `url(${background})`,
       }}>
-      <Icon />
-      
-      <LoginForm headerText="Create Account" paragraphText = "If you already have an account, " linkPath = "/login" linkText='Sign In'/>
-
+      <div className={styles.icon}>
+        <Icon white={false}/>
+      </div>
+      <div className={styles.form}>
+        <SignupForm headerText="Create Account" paragraphText = "If you already have an account, " linkPath = "/login" linkText='Sign In'/>
+      </div>
     </div>
   );
 };

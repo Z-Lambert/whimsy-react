@@ -1,20 +1,17 @@
-import React from 'react';
-import styles from './Icon.module.scss';
-import icon from '../assets/images/inkwell planet icon.png'
+
+import white_icon from '../assets/images/inkwell planet icon white outlined.png'
+import black_icon from '../assets/images/inkwell planet icon outlined transparent.png'
 import { Link } from 'react-router-dom';
 
-
-
-const Icon: React.FC = () => {
+interface IconInfo {
+    white: boolean;
+}
+const Icon = (props: IconInfo) => {
 
   return (
-    <header className={styles.icon}>
-      <div>
-        <Link to="/">
-        <img src={icon} alt="Inkwell Planet Icon"></img>
-        </Link>
-      </div>
-    </header>
+    <Link to="/">
+    <img src={props.white? white_icon : black_icon} alt="Inkwell Planet Icon"></img>
+    </Link>
   );
 };
 

@@ -1,104 +1,130 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
 
+@media (max-width: 600px) {
+  p {
+    font-size: calc(12px + 0.390625vw); /* Smaller font size for mobile screens */
+    max-width: 90vw; /* More width for the paragraph on mobile screens */
+  }
+}
+
+body {
+  margin: 0;
+}
+
+
 .home {
   position: relative;
-  height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center; 
+  justify-content: center;
   align-items: center;
   color: #333;
   text-align: center;
   font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+  overflow: hidden;
+}
 
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("/src/assets/images/example.png") no-repeat center bottom / cover;
-    filter: blur(5px);
-    z-index: -1;
-  }
+.centeredContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 40vh;
+}
 
-  h1 {
-    font-weight: 600;  // make it bold
-    font-size: 2.5em;  // make it larger
-    margin-bottom: 0.5em;
-  }
+.home::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("/src/assets/images/example.png") no-repeat center bottom / cover;
+  filter: blur(5px);
+  z-index: -1;
+}
 
-  p {
-    font-weight: 300;  // keep it light
-    font-size: 1.2em;  // make it slightly smaller
-    margin-bottom: 2em;
-  }
+.home h1 {
+  font-weight: 600;
+  font-size: 2.5em;
+}
 
+.home p {
+  font-weight: 300;
+  font-size: calc(12px + 1vw); /* Adjust the scaling as needed */
+  max-width: 90vw; /* Adjust the scaling as needed */
+  text-align: center;
+}
 
-  .button {
-    display: grid;
-    grid-template-columns: repeat(2, max-content);
-    gap: 30px;
+.button {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  gap: 30px;
+  justify-content: center;
+  width: 100%;
+
+  a {
+    align-items: center;
+    background-color: #fee6e3;
+    border: 2px solid #111;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: #111;
+    cursor: pointer;
+    display: flex;
+    font-family: Inter, sans-serif;
+    font-size: calc(12px + 1vw); /* Adjust the scaling as needed */
+    height: calc(42px + 1vw); /* Adjust the scaling as needed */
     justify-content: center;
-    width: 100%;
+    line-height: 24px;
+    max-width: 100%;
+    padding: 0 calc(20px + 1vw); /* Adjust the scaling as needed */
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
 
-    a {
-      align-items: center;
-      background-color: #fee6e3;
-      border: 2px solid #111;
+    &:after {
+      background-color: #111;
       border-radius: 8px;
-      box-sizing: border-box;
-      color: #111;
-      cursor: pointer;
-      display: flex;
-      font-family: Inter,sans-serif;
-      font-size: calc(15px + 0.390625vw);
-      height: calc(72px + 0.390625vw);
-      justify-content: center;
-      line-height: 24px;
-      max-width: 100%;
-      padding: 0 calc(50px + 0.390625vw);
-      position: relative;
-      text-align: center;
-      text-decoration: none;
-      user-select: none;
-      -webkit-user-select: none;
-      touch-action: manipulation;
+      content: "";
+      display: block;
+    height: calc(42px + 1vw); /* Adjust the scaling as needed */
+      left: 0;
+      width: 100%;
+      position: absolute;
+      top: -2px;
+      transform: translate(4px, 4px);
+      transition: transform 0.2s ease-out;
+      z-index: -1;
+    }
 
-      &:after {
-        background-color: #111;
-        border-radius: 8px;
-        content: "";
-        display: block;
-      height: calc(72px + 0.390625vw);
-        left: 0;
-        width: 100%;
-        position: absolute;
-        top: -2px;
-        transform: translate(8px, 8px);
-        transition: transform .2s ease-out;
-        z-index: -1;
-      }
+    &:hover:after {
+      transform: translate(0, 0);
+    }
 
-      &:hover:after {
-        transform: translate(0, 0);
-      }
+    &:active {
+      background-color: #ffdeda;
+      outline: 0;
+    }
 
-      &:active {
-        background-color: #ffdeda;
-        outline: 0;
-      }
-
-      &:hover {
-        outline: 0;
-      }
+    &:hover {
+      outline: 0;
     }
   }
+}
 
-  @media (min-width: 768px) {
-    .button a {
-      padding: 0 40px;
-    }
-  }
+.home img {
+  // put the logo in the center top
+position: absolute;
+z-index: 1;
+  left: 50%;
+  top: 10%;
+  transform: translate(-50%, 0); // Shift the logo back to the left by half it
+      width: 300px;
+    object-fit: scale-down;
 }

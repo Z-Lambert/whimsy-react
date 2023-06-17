@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack serve",
-    "dev" : "react-scripts start",
+    "dev": "react-scripts start",
     "build": "webpack"
   },
   "repository": {
@@ -29,10 +29,14 @@
     "@types/react-dom": "^18.0.11",
     "babel-loader": "^9.1.2",
     "react": "^18.2.0",
+    "react-collapse": "^5.1.1",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.13.0"
+    "react-router-dom": "^6.13.0",
+    "react-spring": "^9.7.1",
+    "react-use-measure": "^2.1.1"
   },
   "devDependencies": {
+    "@types/react-collapse": "^5.0.1",
     "@webpack-cli/generators": "^3.0.1",
     "css-loader": "^6.7.3",
     "html-webpack-plugin": "^5.5.0",

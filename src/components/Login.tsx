@@ -7,14 +7,17 @@ import background from '../assets/images/background.png'
 const Login: React.FC = () => {
 
   return (
-    <div className={styles.body} style={{ 
+    <div className={styles.container} style={{ 
         backgroundImage: `url(${background})`,
       }}>
-      <Icon />
-      
-      <LoginForm headerText="Log In" paragraphText = "If you don't have an account, " linkPath = "/signup" linkText = "Create Account"/>
-
-
+        <div className={styles.group}>
+          <div className={styles.form}>
+            <LoginForm headerText="Log In" paragraphText = "If you don't have an account, " linkPath = "/signup" linkText = "Create Account"/>
+          </div>
+          <div className={styles.loginIcon}>
+            <Icon white={true}/>
+          </div>
+        </div>
     </div>
   );
 };

@@ -1,0 +1,23 @@
+.cardContentContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  background: url("/src/assets/images/star\ and\ item\ background\ black\ thin.png");
+  min-height: 100vh;
+}
+
+.cardsContainer {
+  flex: 0.65;
+  margin-right: 20px; 
+  width: 100%;
+  margin-right: 5em;
+  margin-left: 5em;
+}
+
+.filterContainer {
+  flex: 0.35;
+  width: 100%;
+    margin-right: 2em;
+
+}

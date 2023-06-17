@@ -4,23 +4,21 @@
 .header {
     font-family: 'Poppins', sans-serif;
     font-size: calc(15px + 0.390625vw);
-    width: 100%;
+    width: 55%;
     text-align: left;
 }
 
-.loginForm {
+.signupForm {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
+  text-align: left;
   min-height: 100vh;
   flex-direction: column;
-  padding-right: 10em;
-
 }
 
 .input {
-  width: 100%; // Stretch across the screen
+  width: 55%; // Stretch across the screen
   height: 3em;
   z-index: 2;
   padding: 10px;
@@ -30,19 +28,15 @@
   color: black;
     box-sizing: border-box;
     font-size: calc(10px + 0.390625vw);
-
-}
-
-.loginForm a {
-  width: 100%
+font-family: 'Poppins', sans-serif;
 }
 
 .nextButton,
-.loginButton {
+.signupButton {
     font-family: 'Poppins', sans-serif;
-    height: 3em; 
+    height: 3em;
     font-size: calc(10px + 0.390625vw);
-  width: 100%; // Stretch across the screen
+  width: 55%; // Stretch across the screen
   box-sizing: border-box;
   padding: 10px;
   z-index: 2;
@@ -54,11 +48,11 @@
 }
 
 .editButton {
-  font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
+  margin-left: 10px;
   padding: 5px 10px;
   border: 1px solid black;
-  background: rgb(0, 0, 0);
-  color: white;
+  background: white;
   cursor: pointer;
 }
 
@@ -72,47 +66,36 @@
   float: left;
 }
 
-.loginText {
+.signupText {
     font-size: calc(10px + 0.390625vw);
     font-family: 'Poppins', sans-serif;
-    width: 100%;
+    width: 55%;
     text-align: left;
 }
 
 .email,
-  p {
+  input p {
     font-size: calc(10px + 0.390625vw);
     font-family: 'Poppins', sans-serif;
-    width: 100%;
-    text-align: left;
+    width: 55%;
   }
 
 .emailInput {
     font-size: calc(10px + 0.390625vw);
     font-family: 'Poppins', sans-serif;
-float: left;
+    float: left;
     text-align: left;
     border: none;
     background: rgb(238, 238, 238, 0.8)
 }
 .editContainer {
-  width: 100%
+  width: 55%
 }
 
-
-@media (max-width: 600px) {
-  .content {
-    flex-direction: column;
-    align-items: center; /* Align items to the center for mobile screens */
-  }
-
-  .loginForm {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  min-height: auto;
-  flex-direction: column;
-  padding-right: 0em;
+.text {
+      font-size: calc(15px + 0.390625vw);
+    font-family: 'Poppins', sans-serif;
+    width: 55%;
+    text-align: left;
 }
-}
+
