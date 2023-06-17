@@ -3,6 +3,7 @@ import Icon from './Icon';
 import LoginForm from './LoginForm';
 import styles from './Login.module.scss';
 import background from '../assets/images/background.png'
+import WebsiteName from './WebsiteName';
 
 const Login: React.FC = () => {
 
@@ -15,7 +16,8 @@ const Login: React.FC = () => {
             <LoginForm headerText="Log In" paragraphText = "If you don't have an account, " linkPath = "/signup" linkText = "Create Account"/>
           </div>
           <div className={styles.loginIcon}>
-            <Icon white={true}/>
+            <Icon white={false}/>
+            <WebsiteName/>
           </div>
         </div>
     </div>

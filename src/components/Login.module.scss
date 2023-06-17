@@ -16,9 +16,11 @@
   right: -10vw
 }
 
-.group img {
-    width: 400px;
-    object-fit: scale-down;
+
+.loginIcon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .container::after {
@@ -28,7 +30,7 @@
   right: 0;
   bottom: 0;
   left: 0;
-  background: url("/src/assets/images/star\ background\ white\ thin.png") no-repeat center bottom / cover, url("/src/assets/images/LoginAlternativeBackgroundStarlessNoHills.png") no-repeat center bottom / cover;
+  background: url("/src/assets/images/star\ background\ black\ thin.png") no-repeat center bottom / cover;
   z-index: 0-1;
 }
 

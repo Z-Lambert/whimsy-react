@@ -38,7 +38,7 @@ const SignupForm = (props: TextInfo) => {
   return (
     <div className={styles.signupForm}>
         <h2 className={styles.header}>{props.headerText}</h2>
-        <p className={styles.text}>Welcome to Whimsy! Enter an email address to get started.</p>
+        <p className={styles.text}>Welcome to Whimsy! Keep track of your favorite fanfictions and never be disorganized again! Enter an email address to get started.</p>
       {isEmailEntered && !isEditingEmail ? (
         <>
           <div className={styles.email}>
@@ -97,7 +97,7 @@ const SignupForm = (props: TextInfo) => {
           )}
         </>
       )}
-      <p className={styles.signupText}>If you don't have an account, <Link to={props.linkPath} relative="path">
+      <p className={styles.signupText}>If you already have an account, <Link to={props.linkPath} relative="path">
       {props.linkText}
     </Link></p>
     </div>

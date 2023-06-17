@@ -2,7 +2,29 @@
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: 100% auto;
+  color: white;
+  position: relative;
+  justify-content: left;
+  height: 100vh;
 }
+
+.group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.Loginicon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2em;
+}
+
+
+
+
 
 .container::after {
   content: '';
@@ -11,17 +33,38 @@
   right: 0;
   bottom: 0;
   left: 0;
-  background: url("/src/assets/images/star\ background\ black\ thin.png") no-repeat center bottom / cover;
-  z-index: -1;
+background: url("/src/assets/images/star\ background\ white\ thin.png") no-repeat center bottom / cover, url("/src/assets/images/LoginAlternativeBackgroundStarlessNoHills.png") no-repeat center bottom / cover;  z-index: 0-1;
 }
 
-.container img {
-  // put the logo in the center top
-position: absolute;
-z-index: 1;
-  left: 50%;
-  top: 10%;
-  transform: translate(-50%, 0); // Shift the logo back to the left by half it
-      width: 300px;
+
+
+@media (max-width: 600px) {
+  .group {
+    flex-direction:column-reverse;
+    align-items: center; /* Align items to the center for mobile screens */
+    padding-top: 5em;
+    margin: 0;
+    top: 0;
+    right: 0;
+  }
+  .container {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+  }
+
+  .form {
+  max-height: 40vh;
+  overflow: auto;
+  padding-top: 5em;
+}
+  .loginIcon {
+    max-height: 40vh; /* adjust based on your preference */
+  }
+
+  .group img {
+    width: 300px;
     object-fit: scale-down;
+}
+
 }
