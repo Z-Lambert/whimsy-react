@@ -14,7 +14,6 @@ body {
 .group {
   display: flex;
   align-items: center;
-  margin-left: 10em;
   position: relative;
   top: -10vh;
   right: -10vw
@@ -25,6 +24,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 2em;
 }
 
 .container::after {

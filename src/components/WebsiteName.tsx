@@ -7,7 +7,7 @@ const Icon = () => {
 
   return (
     <Link to="/">
-    <img className={styles.websiteName} src={name} alt="Whimsy: Website Name Text"></img>
+    <img className={styles.websiteName} src={name} alt="Whimsy: Website Name Text"/>
     </Link>
   );
 };

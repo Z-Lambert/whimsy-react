@@ -15,18 +15,62 @@
 }
 
 .fanficHeader {
+  display: flex;
+  flex-direction: row;
   background-color: #ffffff;
-  padding: 10px;
+  padding-left: 10px;
+  align-items: center;
+}
+
+.fanficBody p {
+  margin-top: 0.5em;
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.fanficFooter p {
+  margin-top: 0.5em;
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.miniIcon {
+  width: 2em;
+  height: 2em;
+  padding: 1em;
+}
+
+.expandIcon {
+  height: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.expandIcon:hover {
+  background-color: #e4e4e4;
+  opacity: 60%
+}
+
+.expandIcon img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 50%;
 }
 
 .fanficBody {
-  padding: 10px;
+  padding-top: 10px;
   background-color: #f0f0f0ad;
 }
 
 .fanficFooter {
   background-color: #f0f0f0ad;
-  padding: 10px;
+    padding-top: 10px;
+
   overflow: hidden;
   transition: max-height 0.5s ease;
   max-height: 5000px; /* Set to a value larger than what the div could ever expand to */
