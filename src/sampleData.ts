@@ -1,4 +1,4 @@
-export const sampleData = [
+const sampleData = [
   {
     url: 'https://www.fanfiction.net/s/14200590/1/Lift-Not-the-Painted-Veil',
     title: 'Lift Not the Painted Veil',
@@ -19,6 +19,8 @@ export const sampleData = [
     notes: ['great start', 'love this next chapter', 'chapter 3 is a banger'],
     status: 'UP_TO_DATE',
     tags: ['time travel'],
+    updated: '18 Jun 23',
+    published: '19 Feb 23'
   },
   {
     url: 'https://www.fanfiction.net/s/13631456/1/Orochimama',
@@ -40,6 +42,8 @@ export const sampleData = [
     notes: ['love the beginning', 'hahaha', 'so funny'],
     status: 'UP_TO_DATE',
     tags: ['self insert'],
+    updated: '11 Dec 22',
+    published: '1 Jul 20'
   },
     {
     url: 'https://www.fanfiction.net/s/8501689/1/The-Havoc-side-of-the-Force',
@@ -61,5 +65,9 @@ export const sampleData = [
     notes: ['love the beginning', 'hahaha', 'so funny'],
     status: 'UP_TO_DATE',
     tags: ['crossover'],
+    updated: '24 Aug 19',
+    published: '6 Sep 12'
   },
 ];
+
+export default sampleData;

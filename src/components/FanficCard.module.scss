@@ -2,24 +2,48 @@
 
 
 .fanficCard {
+  position: relative;
   width: 100%;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  margin: 10px;
+  border: none;
+  border-radius: 1px;
+  margin: 1em;
   overflow: hidden;
+  background-color: rgba(219, 219, 219, 0.795);
 }
 
-.fanficCard:hover {
-  border: 2px solid #ccc;
-
+.fanficCard::before {
+    content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("/src/assets/images/star\ and\ item\ background\ black\ thin\ white\ background.png");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
 }
 
-.fanficHeader {
+.fanficHeader, .urlLink {
   display: flex;
   flex-direction: row;
-  background-color: #ffffff;
   padding-left: 10px;
   align-items: center;
+  background-color: white;
+  font-size: calc(6px + 0.390625vw);
+}
+
+.urlLink {
+  padding-right: 2em;
+  opacity: 60%;
+}
+.urlLink:hover {
+  opacity: 100%;
+}
+
+.fanficHeader h2 {
+  margin: 0;
 }
 
 .fanficBody p {
@@ -28,6 +52,8 @@
   margin-right: 1em;
   margin-bottom: 0;
   padding: 0;
+  font-size: calc(6px + 0.390625vw);
+
 }
 
 .fanficFooter p {
@@ -42,7 +68,14 @@
   width: 2em;
   height: 2em;
   padding: 1em;
+  border-radius: 2px;
 }
+
+.miniIcon:hover {
+  opacity: 60%;
+  background-color: rgb(248, 248, 248);
+}
+
 
 .expandIcon {
   height: 30px;
@@ -51,7 +84,6 @@
 }
 
 .expandIcon:hover {
-  background-color: #e4e4e4;
   opacity: 60%
 }
 
@@ -62,22 +94,51 @@
   opacity: 50%;
 }
 
+.metaData {
+  display: flex;
+  flex-direction: row;
+  opacity: 80%;
+  font-size: calc(6px + 0.390625vw);
+
+  p {
+    display: inline-block;
+    margin-right: 10px;
+    white-space: nowrap;
+  }
+}
+
+.tagList {
+  padding-left: 1em;
+  padding-top: 0.5em;
+}
+.tag {
+    display: inline-block;
+    border-radius: 3px;
+    padding: .2em .5em .3em;
+    border-radius: 2px;
+    margin: .25em .1em;
+    font-size: calc(4px + 0.390625vw);
+    border-radius: 4px;
+    background: #3b8baf;
+    color: #ffffff;
+}
+
+.fandomsText {
+  opacity: 60%;
+}
 .fanficBody {
   padding-top: 10px;
-  background-color: #f0f0f0ad;
+  border-top: 1px solid #cccccc;
 }
 
 .fanficFooter {
-  background-color: #f0f0f0ad;
     padding-top: 10px;
-
-  overflow: hidden;
+  max-height: 0;
   transition: max-height 0.5s ease;
   max-height: 5000px; /* Set to a value larger than what the div could ever expand to */
 } 
 
 .fanficFooterHidden {
-    background-color: #f0f0f0ad;
   padding: 10px;
   max-height: 0;
   transition: max-height 0.5s ease;

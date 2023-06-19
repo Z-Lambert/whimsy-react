@@ -1,9 +1,18 @@
 .cardContentContainer {
+  position: relative;
+  background-image: url("/src/assets/images/star\ and\ item\ background\ white\ thin.png"), url("/src/assets/images/LoginAlternativeBackgroundStarlessNoHills.png");
+  background-attachment: fixed; /* this makes it static relative to the viewport */
+    background-attachment: fixed; /* this makes it static relative to the viewport */
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+}
+
+.cardContentContainer {
   display: flex;
   justify-content: space-between;
   width: 100%;
   font-family: 'Poppins', sans-serif;
-  background: url("/src/assets/images/star\ and\ item\ background\ black\ thin.png");
   min-height: 100vh;
 }
 
@@ -13,6 +22,7 @@
   width: 100%;
   margin-right: 5em;
   margin-left: 5em;
+  z-index: 1;
 }
 
 .filterContainer {

@@ -8,8 +8,8 @@ export default interface IFanFiction {
   genres: string[];
   wordCount: number;
   completed: boolean;
-  published?: Date;
-  updated?: Date;
+  published?: string;
+  updated?: string;
   review?: string;
   recommended?: boolean;
   ratingCharacters?: number;

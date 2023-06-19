@@ -3,7 +3,7 @@ import Login from './Login';
 import Signup from './Signup';
 import Home from "./Home";
 import Dashboard from "./Dashboard";
-import { sampleData } from "../sampleData";
+import  sampleData from "../sampleData";
 
 export default function App() {
   return (
