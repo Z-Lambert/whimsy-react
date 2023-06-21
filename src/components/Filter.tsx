@@ -5,16 +5,23 @@ import data from '../../src/sampleData'
 const Filter: React.FC = () => {
     const [activeTab, setActiveTab] = useState('tags');
 
-  const selectTab = (tab: string) => {
-    setActiveTab(tab);
-  };
+const selectTab = (tab: React.SetStateAction<string>) => {
+  setActiveTab(tab);
+
+  const slider = document.getElementById('tabSlider');
+  if (tab === 'tags' && slider) {
+    slider.style.transform = 'translateX(0%)';
+  } else if (tab === 'metaData' && slider) {
+    slider.style.transform = 'translateX(100%)';
+  }
+};
 
   return (
     <div className={styles.filterContainer}>
-      <div className={styles.tabContainer}>
-        <div id={styles.tabSlider}></div>
-        <button className={styles.tagsTab} onClick={() => selectTab('tags')}>Tags</button>
-        <button className={styles.dataTab} onClick={() => selectTab('metaData')}>Meta Data</button>
+      <div className={`${styles.tabContainer} ${activeTab}`}>
+        <div id="tabSlider" className={styles.tabSlider}></div>
+        <button className={styles.filterTab} onClick={() => selectTab('tags')}>Tags</button>
+        <button className={styles.filterTab} onClick={() => selectTab('metaData')}>Meta Data</button>
       </div>
 
       <SelectedTagsArea />

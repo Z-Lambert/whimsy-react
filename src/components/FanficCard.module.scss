@@ -4,8 +4,8 @@
 .fanficCard {
   position: relative;
   width: 100%;
-  border: none;
-  border-radius: 1px;
+  box-shadow: 0px 2px 5px rgba(219, 219, 219, 0.795);;
+  border-radius: 15px;
   margin: 1em;
   overflow: hidden;
   background-color: rgba(219, 219, 219, 0.795);
@@ -25,6 +25,10 @@
   z-index: -1;
 }
 
+.fanficHeader {
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.795);
+}
+
 .fanficHeader, .urlLink {
   display: flex;
   flex-direction: row;
@@ -32,6 +36,8 @@
   align-items: center;
   background-color: white;
   font-size: calc(6px + 0.390625vw);
+ 
+
 }
 
 .urlLink {
@@ -128,7 +134,7 @@
 }
 .fanficBody {
   padding-top: 10px;
-  border-top: 1px solid #cccccc;
+  
 }
 
 .fanficFooter {
