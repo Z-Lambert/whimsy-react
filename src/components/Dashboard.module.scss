@@ -1,33 +1,57 @@
-.cardContentContainer {
-  position: relative;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;600;700&display=swap');
+
+.dashboardContainer {
+  display: flex;
+  flex-direction: row;
   background-image: url("/src/assets/images/star\ and\ item\ background\ white\ thin.png"), url("/src/assets/images/LoginAlternativeBackgroundStarlessNoHills.png");
   background-attachment: fixed; /* this makes it static relative to the viewport */
     background-attachment: fixed; /* this makes it static relative to the viewport */
   background-size: cover;
   background-repeat: no-repeat;
-  
 }
 
 .cardContentContainer {
   display: flex;
-  justify-content: space-between;
-  width: 100%;
   font-family: 'Poppins', sans-serif;
+  font-weight: 400;
   min-height: 100vh;
+  flex-direction: column;
+  width: 65%;
+  
 }
 
 .cardsContainer {
-  flex: 0.65;
-  margin-right: 20px; 
-  width: 100%;
+  width: 90%;
   margin-right: 5em;
   margin-left: 5em;
   z-index: 1;
 }
 
 .filterContainer {
-  flex: 0.35;
-  width: 100%;
-    margin-right: 2em;
+  width: 35%;
+}
 
+.navTabs {
+  background-color: transparent;
+  margin-left: 6em;
+  
+
+  button {
+    padding: 1em;
+    font-size: calc(12px + 0.390625vw);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    background-color: transparent;
+    border: none;
+    color: white;
+    // Add your other styling here...
+  }
+}
+
+
+.selected.selected {
+  color: rgb(218, 200, 247);
+  text-decoration: underline;
+  text-underline-offset: 0.5em;
 }

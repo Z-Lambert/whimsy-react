@@ -17,7 +17,7 @@ const sampleData = [
     ratingGrammar: 3,
     chapterCount: 10,
     notes: ['great start', 'love this next chapter', 'chapter 3 is a banger'],
-    status: 'UP_TO_DATE',
+    status: 'Up to date',
     tags: ['time travel'],
     updated: '18 Jun 23',
     published: '19 Feb 23'
@@ -40,7 +40,7 @@ const sampleData = [
     ratingGrammar: 2,
     chapterCount: 43,
     notes: ['love the beginning', 'hahaha', 'so funny'],
-    status: 'UP_TO_DATE',
+    status: 'Completed',
     tags: ['self insert'],
     updated: '11 Dec 22',
     published: '1 Jul 20'
@@ -63,7 +63,7 @@ const sampleData = [
     ratingGrammar: 2,
     chapterCount: 24,
     notes: ['love the beginning', 'hahaha', 'so funny'],
-    status: 'UP_TO_DATE',
+    status: 'Abandoned',
     tags: ['crossover'],
     updated: '24 Aug 19',
     published: '6 Sep 12'

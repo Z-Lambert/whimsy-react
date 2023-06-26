@@ -12,9 +12,10 @@ import starIcon from '../assets/images/starIcon.png'
 
 interface IFanFictionCardProps {
   fanfic: IFanFiction;
+  activeTab: string;
 }
 
-const FanFictionCard: React.FC<IFanFictionCardProps> = ({ fanfic }) => {
+const FanFictionCard: React.FC<IFanFictionCardProps> = ({ fanfic, activeTab }) => {
   const [expanded, setExpanded] = useState(false);
   const [ref, { height }, refresh] = useMeasure();
 

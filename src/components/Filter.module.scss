@@ -63,6 +63,9 @@
   margin: 1em;
   position: relative;
   border-radius: 15px;
-  box-shadow: 0px 2px 5px rgba(219, 219, 219, 0.795);;
+  box-shadow: 0px 2px 5px rgba(219, 219, 219, 0.795);
+  position: fixed; // This will make the filter stay in place while scrolling
+  width: 31%;
+
 }
 
